@@ -1,4 +1,4 @@
-const apiKey = process.env.API_KEY;
+const apiKey = process.env.OPENWEATHER_API_KEY;
 const apiUrl =
   "https://api.openweathermap.org/data/2.5/weather?&units=metric&q="; //remove appid from link
 
