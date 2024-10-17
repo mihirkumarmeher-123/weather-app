@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(-45deg, #00feba, #5b548a);
+  background-attachment: fixed;
+}
+
+.card {
+  width: 90%;
+  max-width: 400px;
+  background: linear-gradient(135deg, #00feba, #5b548a);
+  color: #fff;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 15px;
+  text-align: center;
+  /* border: 1px solid rgb(101, 118, 118); */
+  box-shadow: 1px 0.5px 8px #828b89;
+  /* position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+}
+
+.search {
+  width: 100%;
+  /* border: 2px solid black; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.search input {
+  border: 0;
+  outline: 0;
+  background-color: #ebfffc;
+  height: 45px;
+  padding: 8px 25px;
+  border-radius: 30px;
+  flex: 1;
+  margin-right: 10px;
+  font-size: 18px;
+  width: 100%;
+}
+
+.search button {
+  border: 0;
+  outline: 0;
+  background-color: #ff0000;
+  border-radius: 35px;
+  padding: 10px 20px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  /* height: 45px; */
+}
+
+.weather-icon {
+  width: 180px;
+  margin-top: 30px;
+}
+
+.weather h1 {
+  font-size: 70px;
+  font-weight: 500;
+}
+
+.weather h2 {
+  font-size: 45px;
+  font-weight: 400;
+  margin-top: -10px;
+}
+
+.details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  margin-top: 50px;
+}
+
+.col img {
+  width: 50px;
+  margin-right: 10px;
+  color: black;
+  background-color: transparent;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+.humidity,
+.wind {
+  font-size: 28px;
+  margin-top: -6px;
+}
+
+.weather {
+  display: none;
+}
+
+.error {
+  text-align: left;
+  margin-left: 10px;
+  font-size: 20px;
+  color: rgb(0, 0, 0);
+  margin-top: 10px;
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .weather h2 {
+    font-size: 30px;
+  }
+
+  .weather h1 {
+    font-size: 50px;
+  }
+
+  .humidity,
+  .wind {
+    font-size: 15px;
+    margin-top: -6px;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .card {
+    margin: 50px auto 10px;
+  }
+  .search input {
+    width: 100%;
+  }
+}
